@@ -101,10 +101,6 @@ h2 {
   gap: 0.5rem;
 }
 
-.fi {
-  line-height: 0;
-}
-
 .btn .fi {
   display: flex;
   justify-content: center;
@@ -282,7 +278,9 @@ h2 {
 
 .contactForm .btn {
   align-self: flex-start;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1.563rem;
+  font-weight: 400;
 }
 
 /*Main Footer*/
@@ -318,7 +316,7 @@ h2 {
 
 @media (max-width: 760px) {
   .aboutMedia {
-    width: 30%;
+    width: 40%;
   }
   h1 {
     font-size: 3.052rem;
@@ -335,10 +333,10 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 2rem;
   }
   .aboutMedia {
-    width: 40%;
+    width: 50%;
   }
   .aboutTextBox {
     width: 100%;
