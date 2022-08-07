@@ -1,0 +1,365 @@
+/*Font Size System
+Major Third https://type-scale.com/
+
+7.451rem
+74.51px
+
+5.96rem
+59.60px
+
+4.768rem
+47.68px
+
+3.815rem
+38.15px
+
+3.052rem
+30.52px
+
+2.441rem
+24.41px
+
+1.953rem
+19.53px
+
+1.563rem
+15.63px
+
+1.25rem
+12.50px
+
+1rem
+10.00px
+
+0.8rem
+8.00px
+
+0.64rem
+6.40px
+
+0.512rem
+5.12px
+
+0.41rem
+4.10px
+
+*/
+
+/*Global*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #111;
+  font-size: 1.563rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 3.815rem;
+}
+
+h2 {
+  font-size: 3.052rem;
+}
+
+.pageContainer {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+.btn {
+  border: none;
+  background: #111;
+  color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.fi {
+  line-height: 0;
+}
+
+.btn .fi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Main Header*/
+
+.mainHeader {
+  border-bottom: 0.2rem solid #111;
+  padding: 2rem 0;
+}
+
+/*Main Nav*/
+
+.mainNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navLogo a:link,
+.navLogo a:visited {
+  font-size: 2.441rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.navMenu {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  list-style: none;
+}
+
+.navLink:link,
+.navLink:visited {
+  font-size: 1.953rem;
+  font-weight: 600;
+  border-bottom: 0.2rem solid transparent;
+  transition: all 0.3s;
+}
+
+.navLink:hover,
+.navLink:active {
+  border-color: #111;
+}
+
+.navIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Section About*/
+
+#about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  /* border-bottom: 0.2rem solid #111; */
+  box-shadow: inset 0px -1px 0px 0px #d4d4d4, inset 0px -2px 0px 0px #ffffff,
+    inset 0px -4px 0px 0px #d4d4d4;
+  padding: 3rem 0;
+}
+
+.aboutMedia {
+  width: 20%;
+}
+
+.aboutImg {
+  display: inline-block;
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+.aboutTextBox {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.aboutText {
+  font-size: 1.953rem;
+  line-height: 1.5;
+}
+
+/*Section Projects*/
+
+#projects {
+  box-shadow: inset 0px -1px 0px 0px #d4d4d4, inset 0px -2px 0px 0px #ffffff,
+    inset 0px -4px 0px 0px #d4d4d4;
+  padding: 3rem 0;
+}
+
+.projectsHeading {
+  margin-bottom: 3rem;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3rem;
+  row-gap: 6rem;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.projectImg {
+  max-width: 100%;
+}
+
+.projectTitle {
+  font-size: 1.953rem;
+  line-height: 1.5;
+}
+
+.projectText {
+  font-size: 1.563rem;
+  line-height: 1.5;
+}
+
+.projectFooter {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.projectFooter .btn {
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+/*Section Contact*/
+
+#contact {
+  border-bottom: 0.2rem solid #111;
+  padding: 3rem 0;
+}
+
+.contactHeading {
+  margin-bottom: 2rem;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contactForm input {
+  height: 4rem;
+  padding: 0 1rem;
+}
+
+.contactForm input,
+.contactForm textarea {
+  font-size: 1.563rem;
+  font-family: "Soure Sans Pro", sans-serif;
+}
+
+.contactForm textarea {
+  padding: 1rem;
+}
+
+.contactForm .btn {
+  align-self: flex-start;
+  font-size: 1.563rem;
+}
+
+/*Main Footer*/
+
+.mainFooter {
+  padding: 2rem 0;
+}
+
+.footerNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.madeBy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.madeBy .fi {
+  color: red;
+}
+
+.footerNav .navMenu {
+  gap: 1.5rem;
+}
+
+/*Media Queries*/
+
+/*Max-width 800px*/
+
+@media (max-width: 760px) {
+  .aboutMedia {
+    width: 30%;
+  }
+  h1 {
+    font-size: 3.052rem;
+  }
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 660px) {
+  #about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+  .aboutMedia {
+    width: 40%;
+  }
+  .aboutTextBox {
+    width: 100%;
+  }
+  .aboutHeading {
+    text-align: center;
+  }
+  .aboutText {
+    text-align: center;
+  }
+}
+
+@media (max-width: 520px) {
+  .projects {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .footerNav {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
