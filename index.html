@@ -155,9 +155,22 @@
         <section id="contact">
           <h2 class="contactHeading">Contact</h2>
           <form action="POST" data-netlify="true" class="contactForm">
-            <input type="text" name="name" id="name" placeholder="Name" />
-            <input type="email" name="email" id="email" placeholder="Email" />
+            <input
+              required
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+            />
+            <input
+              required
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+            />
             <textarea
+              required
               name="msgBody"
               id="msgBody"
               cols="30"
