@@ -157,6 +157,8 @@
           <form action="POST" data-netlify="true" class="contactForm">
             <input
               required
+              oninvalid="this.setCustomValidity('Please enter your name')"
+              oninput="this.setCustomValidity('')"
               type="text"
               name="name"
               id="name"
@@ -164,6 +166,8 @@
             />
             <input
               required
+              oninvalid="this.setCustomValidity('Please enter a valid email address')"
+              oninput="this.setCustomValidity('')"
               type="email"
               name="email"
               id="email"
@@ -171,6 +175,8 @@
             />
             <textarea
               required
+              oninvalid="this.setCustomValidity('Please enter a message')"
+              oninput="this.setCustomValidity('')"
               name="msgBody"
               id="msgBody"
               cols="30"
@@ -184,9 +190,7 @@
       </main>
       <footer class="mainFooter">
         <nav class="footerNav">
-          <span class="madeBy"
-            >&copy; 2022 Made with &#10084; by Nathan Speich</span
-          >
+          <span class="madeBy">&copy; 2022 Nathan Speich</span>
           <ul class="navMenu">
             <li class="navItem">
               <a
