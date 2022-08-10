@@ -154,7 +154,7 @@
         </section>
         <section id="contact">
           <h2 class="contactHeading">Contact</h2>
-          <form action="" class="contactForm">
+          <form action="POST" data-netlify="true" class="contactForm">
             <input type="text" name="name" id="name" placeholder="Name" />
             <input type="email" name="email" id="email" placeholder="Email" />
             <textarea
@@ -164,6 +164,7 @@
               rows="10"
               placeholder="Message"
             ></textarea>
+            <div data-netlify-recaptcha="true"></div>
             <button type="submit" class="btn">Send Message</button>
           </form>
         </section>
