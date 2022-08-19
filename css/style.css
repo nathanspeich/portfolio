@@ -44,8 +44,9 @@ html {
 
 body {
   font-family: "Source Sans Pro", sans-serif;
-  color: #111;
+  color: rgb(204, 204, 204);
   font-size: 1.563rem;
+  background-color: #000;
 }
 
 a {
@@ -56,11 +57,12 @@ a {
 h1,
 h2,
 h3 {
-  font-weight: 600;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
 }
 
 h1 {
-  font-size: 3.815rem;
+  font-size: 4.768rem;
 }
 
 h2 {
@@ -68,15 +70,15 @@ h2 {
 }
 
 .pageContainer {
-  max-width: 90rem;
+  max-width: 110rem;
   margin: 0 auto;
   padding: 0 3rem;
 }
 
 .btn {
-  border: none;
-  background: #111;
-  color: #fff;
+  border: 1px solid rgb(87, 87, 89);
+  background: none;
+  color: rgb(255, 255, 255);
   font-family: "Source Sans Pro", sans-serif;
   padding: 1rem;
   cursor: pointer;
@@ -84,6 +86,13 @@ h2 {
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+  transition: all 0.3s;
+  border-radius: 0.6rem;
+}
+
+.btn:hover {
+  border-color: rgb(4, 195, 127);
+  color: #fff;
 }
 
 .btn .fi {
@@ -95,7 +104,6 @@ h2 {
 /*Main Header*/
 
 .mainHeader {
-  border-bottom: 0.2rem solid #111;
   padding: 2rem 0;
 }
 
@@ -112,6 +120,7 @@ h2 {
   font-size: 2.441rem;
   font-weight: 700;
   text-transform: uppercase;
+  color: rgb(4, 195, 127);
 }
 
 .navMenu {
@@ -131,7 +140,8 @@ h2 {
 
 .navLink:hover,
 .navLink:active {
-  border-color: #111;
+  border-color: rgb(4, 195, 127);
+  color: rgb(4, 195, 127);
 }
 
 .navIcon {
@@ -147,14 +157,12 @@ h2 {
   justify-content: space-between;
   align-items: center;
   gap: 3rem;
-  /* border-bottom: 0.2rem solid #111; */
-  box-shadow: inset 0px -1px 0px 0px #d4d4d4, inset 0px -2px 0px 0px #ffffff,
-    inset 0px -4px 0px 0px #d4d4d4;
-  padding: 3rem 0;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .aboutMedia {
-  width: 20%;
+  width: 35%;
 }
 
 .aboutImg {
@@ -170,6 +178,12 @@ h2 {
   gap: 1rem;
 }
 
+.aboutTextBox span {
+  font-size: 2.441rem;
+  font-weight: 600;
+  color: rgb(4, 195, 127);
+}
+
 .aboutText {
   font-size: 1.953rem;
   line-height: 1.5;
@@ -178,8 +192,6 @@ h2 {
 /*Section Projects*/
 
 #projects {
-  box-shadow: inset 0px -1px 0px 0px #d4d4d4, inset 0px -2px 0px 0px #ffffff,
-    inset 0px -4px 0px 0px #d4d4d4;
   padding: 3rem 0;
 }
 
@@ -195,19 +207,41 @@ h2 {
 }
 
 .project {
+  background-color: rgb(12, 12, 12);
+  border-radius: 0.6rem;
+  overflow: hidden;
+}
+
+.projectImg {
+  max-width: 100%;
+  display: block;
+}
+
+.projectContent {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.projectTextBox {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 
-.projectImg {
-  max-width: 100%;
-  border: 1px solid #ddd;
+.projectTitle,
+.projectTitle:link,
+.projectTitle:visited {
+  font-size: 2.441rem;
+  line-height: 1.5;
+  align-self: flex-start;
+  transition: all 0.3s;
 }
 
-.projectTitle {
-  font-size: 1.953rem;
-  line-height: 1.5;
+.projectTitle:hover,
+.projectTitle:active {
+  color: rgb(4, 195, 127);
 }
 
 .projectText {
@@ -222,7 +256,7 @@ h2 {
 }
 
 .projectFooter .btn {
-  font-size: 1.25rem;
+  font-size: inherit;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -233,29 +267,52 @@ h2 {
 /*Section Contact*/
 
 #contact {
-  border-bottom: 0.2rem solid #111;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
   padding: 3rem 0;
-}
-
-.contactHeading {
-  margin-bottom: 2rem;
 }
 
 .contactForm {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
+}
+
+.contactForm fieldset {
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+#name {
+  width: 50%;
+}
+
+#email {
+  width: 50%;
 }
 
 .contactForm input {
   height: 4rem;
   padding: 0 1rem;
+  background: none;
+}
+
+.contactForm input:focus {
+  border-color: rgb(4, 195, 127);
 }
 
 .contactForm input,
 .contactForm textarea {
   font-size: 1.563rem;
   font-family: "Soure Sans Pro", sans-serif;
+  background: rgb(12, 12, 12);
+  border: 1px solid transparent;
+  color: #fff;
+  outline: none;
+  border-radius: 0.6rem;
 }
 
 .contactForm textarea {
@@ -263,11 +320,44 @@ h2 {
   resize: none;
 }
 
+.contactForm textarea:focus {
+  border-color: rgb(4, 195, 127);
+}
+
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: rgb(255, 255, 255);
+}
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: rgb(255, 255, 255);
+  opacity: 1;
+}
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: rgb(255, 255, 255);
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: rgb(255, 255, 255);
+}
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: rgb(255, 255, 255);
+}
+
+::placeholder {
+  /* Most modern browsers support this now. */
+  color: rgb(255, 255, 255);
+}
+
 .contactForm .btn {
   align-self: flex-start;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1.563rem;
   font-weight: 400;
+  border-radius: 0.6rem;
 }
 
 /*Main Footer*/
@@ -289,61 +379,57 @@ h2 {
   gap: 0.5rem;
 }
 
-.madeBy .fi {
-  color: red;
-}
-
 .footerNav .navMenu {
   gap: 1.5rem;
 }
 
 /*Media Queries*/
 
-/*Max-width 800px*/
-
-@media (max-width: 760px) {
-  .aboutMedia {
-    width: 40%;
-  }
-  h1 {
-    font-size: 3.052rem;
+@media (max-width: 930px) {
+  html {
+    font-size: 57.5%;
   }
 }
 
-@media (max-width: 660px) {
+@media (max-width: 830px) {
+  html {
+    font-size: 52.5%;
+  }
+}
+
+@media (max-width: 730px) {
   #about {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0;
   }
   .aboutMedia {
-    width: 50%;
+    display: none;
   }
   .aboutTextBox {
     width: 100%;
   }
-  .aboutHeading {
-    text-align: center;
-  }
-  .aboutText {
-    text-align: center;
+}
+
+@media (max-width: 630px) {
+  .projects {
+    grid-template-columns: 1fr;
   }
 }
 
-@media (max-width: 520px) {
-  .projects {
-    grid-template-columns: 1fr;
-    gap: 3rem;
-  }
-  .footerNav {
-    justify-content: center;
-    align-items: center;
+@media (max-width: 530px) {
+  .contactForm fieldset {
+    justify-content: flex-start;
     flex-direction: column;
-    gap: 1rem;
+  }
+  #name {
+    width: 100%;
+  }
+  #email {
+    width: 100%;
   }
   .contactForm .btn {
-    align-self: normal;
+    width: 100%;
   }
 }
