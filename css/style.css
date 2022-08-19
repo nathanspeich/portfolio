@@ -406,12 +406,6 @@ h2 {
   }
 }
 
-@media (max-width: 830px) {
-  html {
-    font-size: 52.5%;
-  }
-}
-
 @media (max-width: 730px) {
   #about {
     flex-direction: column;
