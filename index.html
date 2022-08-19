@@ -58,12 +58,13 @@
           />
         </div>
         <article class="aboutTextBox">
-          <span class="aboutSubheading">Hi, my name is</span>
-          <h1 class="aboutHeading">Nathan Speich</h1>
+          <h1 class="aboutHeading">Hi, I'm Nathan Speich</h1>
           <p class="aboutText">
-            I am a software engineer with a passion for developing websites and
-            web applications, skilled in solving problems with HTML5, CSS3, and
-            JavaScript.
+            I am a software engineer with a passion for A.I. and Machine
+            Learning, skilled in solving problems with HTML5
+            <i class="devicon-html5-plain colored"></i>, CSS3
+            <i class="devicon-css3-plain colored"></i>, and JavaScript
+            <i class="devicon-javascript-plain colored"></i>
           </p>
         </article>
       </section>
@@ -73,125 +74,87 @@
           <section class="projects">
             <article class="project">
               <div class="projectMedia">
+                <img
+                  src="img/bookshelf.png"
+                  alt="Image of Bookshelf App"
+                  class="projectImg"
+                />
+              </div>
+              <div class="projectTextBox">
+                <h3 class="projectTitle">Bookshelf App</h3>
+                <p class="projectText">
+                  Bookshelf utilizes the Google Books API to fetch book data by
+                  title and was built using HTML, CSS, and JavaScript.
+                </p>
+              </div>
+              <div class="projectFooter">
                 <a
                   href="https://nathanspeich.github.io/bookshelf/"
                   target="_blank"
+                  class="btn"
+                  ><i class="fi fi-br-link-alt"></i> Live Demo</a
                 >
-                  <img
-                    src="img/bookshelf.png"
-                    alt="Image of Bookshelf App"
-                    class="projectImg"
-                  />
-                </a>
-              </div>
-              <div class="projectContent">
-                <div class="projectTextBox">
-                  <h3 class="projectTitle">
-                    <a
-                      href="https://nathanspeich.github.io/bookshelf/"
-                      target="_blank"
-                      >Bookshelf App</a
-                    >
-                  </h3>
-                  <p class="projectText">
-                    Bookshelf utilizes the Google Books API to fetch book data
-                    by title and was built using HTML, CSS, and JavaScript.
-                  </p>
-                </div>
-                <div class="projectFooter">
-                  <a
-                    href="https://nathanspeich.github.io/bookshelf/"
-                    target="_blank"
-                    class="btn"
-                    ><i class="fi fi-br-link-alt"></i> Live Demo</a
-                  >
-                  <a
-                    href="https://github.com/nathanspeich/bookshelf"
-                    target="_blank"
-                    class="btn"
-                    ><i class="fi fi-brands-github"></i> View Source</a
-                  >
-                </div>
+                <a
+                  href="https://github.com/nathanspeich/bookshelf"
+                  target="_blank"
+                  class="btn"
+                  ><i class="fi fi-brands-github"></i> View Source</a
+                >
               </div>
             </article>
             <article class="project">
               <div class="projectMedia">
+                <img
+                  src="img/cocktails.png"
+                  alt="Image of Cocktails App"
+                  class="projectImg"
+                />
+              </div>
+              <div class="projectTextBox">
+                <h3 class="projectTitle">Cocktails App</h3>
+                <p class="projectText">
+                  Cocktails utilizes the CocktailDB API to fetch cocktail data
+                  by title or liquor type and was built using HTML, CSS, and
+                  JavaScript.
+                </p>
+              </div>
+              <div class="projectFooter">
                 <a
                   href="https://nathanspeich.github.io/cocktails/index.html"
                   target="_blank"
-                  ><img
-                    src="img/cocktails.png"
-                    alt="Image of Cocktails App"
-                    class="projectImg"
-                  />
-                </a>
-              </div>
-              <div class="projectContent">
-                <div class="projectTextBox">
-                  <h3 class="projectTitle">
-                    <a
-                      href="https://nathanspeich.github.io/cocktails/index.html"
-                      target="_blank"
-                      >Cocktails App</a
-                    >
-                  </h3>
-                  <p class="projectText">
-                    Cocktails utilizes the CocktailDB API to fetch cocktail data
-                    by title or liquor type and was built using HTML, CSS, and
-                    JavaScript.
-                  </p>
-                </div>
-                <div class="projectFooter">
-                  <a
-                    href="https://nathanspeich.github.io/cocktails/index.html"
-                    target="_blank"
-                    class="btn"
-                    ><i class="fi fi-br-link-alt"></i> Live Demo</a
-                  >
-                  <a
-                    href="https://github.com/nathanspeich/cocktails"
-                    target="_blank"
-                    class="btn"
-                    ><i class="fi fi-brands-github"></i> View Source</a
-                  >
-                </div>
+                  class="btn"
+                  ><i class="fi fi-br-link-alt"></i> Live Demo</a
+                >
+                <a
+                  href="https://github.com/nathanspeich/cocktails"
+                  target="_blank"
+                  class="btn"
+                  ><i class="fi fi-brands-github"></i> View Source</a
+                >
               </div>
             </article>
           </section>
         </section>
         <section id="contact">
-          <header class="contactHeader">
-            <h2 class="contactHeading">Let's Connect</h2>
-            <p class="contactSubheading">
-              I am available for both freelance and full-time work.
-            </p>
-          </header>
+          <h2 class="contactHeading">Contact</h2>
           <form action="POST" data-netlify="true" class="contactForm">
-            <fieldset>
-              <input
-                required
-                oninvalid="this.setCustomValidity('Please enter your name')"
-                oninput="this.setCustomValidity('')"
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Name"
-              />
-              <input
-                required
-                oninvalid="this.setCustomValidity('Please enter a valid email address')"
-                oninput="this.setCustomValidity('')"
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Email"
-              />
-            </fieldset>
             <input
+              required
+              oninvalid="this.setCustomValidity('Please enter your name')"
+              oninput="this.setCustomValidity('')"
               type="text"
-              name="subject"
-              id="subject"
-              placeholder="Subject"
+              name="name"
+              id="name"
+              placeholder="Name"
+            />
+            <input
+              required
+              oninvalid="this.setCustomValidity('Please enter a valid email address')"
+              oninput="this.setCustomValidity('')"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
             />
             <textarea
               required
