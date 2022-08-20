@@ -90,11 +90,6 @@ h2 {
   border-radius: 0.6rem;
 }
 
-.btn:hover {
-  border-color: rgb(4, 195, 127);
-  color: #fff;
-}
-
 .btn .fi {
   display: flex;
   justify-content: center;
@@ -136,12 +131,6 @@ h2 {
   font-weight: 600;
   border-bottom: 0.2rem solid transparent;
   transition: all 0.3s;
-}
-
-.navLink:hover,
-.navLink:active {
-  border-color: rgb(4, 195, 127);
-  color: rgb(4, 195, 127);
 }
 
 .navIcon {
@@ -207,7 +196,7 @@ h2 {
 }
 
 .project {
-  background-color: rgb(12, 12, 12);
+  background-color: rgb(15, 15, 15);
   border-radius: 0.6rem;
   overflow: hidden;
 }
@@ -237,11 +226,6 @@ h2 {
   line-height: 1.5;
   align-self: flex-start;
   transition: all 0.3s;
-}
-
-.projectTitle:hover,
-.projectTitle:active {
-  color: rgb(4, 195, 127);
 }
 
 .projectText {
@@ -300,15 +284,11 @@ h2 {
   background: none;
 }
 
-.contactForm input:focus {
-  border-color: rgb(4, 195, 127);
-}
-
 .contactForm input,
 .contactForm textarea {
   font-size: 1.563rem;
   font-family: "Soure Sans Pro", sans-serif;
-  background: rgb(12, 12, 12);
+  background: rgb(15, 15, 15);
   border: 1px solid transparent;
   color: #fff;
   outline: none;
@@ -318,38 +298,6 @@ h2 {
 .contactForm textarea {
   padding: 1rem;
   resize: none;
-}
-
-.contactForm textarea:focus {
-  border-color: rgb(4, 195, 127);
-}
-
-::-webkit-input-placeholder {
-  /* WebKit, Blink, Edge */
-  color: rgb(255, 255, 255);
-}
-:-moz-placeholder {
-  /* Mozilla Firefox 4 to 18 */
-  color: rgb(255, 255, 255);
-  opacity: 1;
-}
-::-moz-placeholder {
-  /* Mozilla Firefox 19+ */
-  color: rgb(255, 255, 255);
-  opacity: 1;
-}
-:-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
-  color: rgb(255, 255, 255);
-}
-::-ms-input-placeholder {
-  /* Microsoft Edge */
-  color: rgb(255, 255, 255);
-}
-
-::placeholder {
-  /* Most modern browsers support this now. */
-  color: rgb(255, 255, 255);
 }
 
 .contactForm .btn {
@@ -384,6 +332,28 @@ h2 {
 }
 
 /*Media Queries*/
+
+@media (min-width: 0px) and (hover: hover) and (pointer: fine) {
+  .btn:hover {
+    border-color: rgb(4, 195, 127);
+    color: #fff;
+  }
+  .navLink:hover,
+  .navLink:active {
+    border-color: rgb(4, 195, 127);
+    color: rgb(4, 195, 127);
+  }
+  .projectTitle:hover,
+  .projectTitle:active {
+    color: rgb(4, 195, 127);
+  }
+  .contactForm input:focus {
+    border-color: rgb(4, 195, 127);
+  }
+  .contactForm textarea:focus {
+    border-color: rgb(4, 195, 127);
+  }
+}
 
 @media (max-width: 930px) {
   html {
