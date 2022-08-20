@@ -44,9 +44,9 @@ html {
 
 body {
   font-family: "Source Sans Pro", sans-serif;
-  color: rgb(204, 204, 204);
+  color: rgb(242, 242, 242);
   font-size: 1.563rem;
-  background-color: #000;
+  background-color: #161b22;
 }
 
 a {
@@ -58,7 +58,7 @@ h1,
 h2,
 h3 {
   font-weight: 700;
-  color: rgb(255, 255, 255);
+  color: rgb(242, 242, 242);
 }
 
 h1 {
@@ -76,9 +76,9 @@ h2 {
 }
 
 .btn {
-  border: 1px solid rgb(87, 87, 89);
+  border: 1px solid rgb(48, 54, 61);
   background: none;
-  color: rgb(255, 255, 255);
+  color: rgb(242, 242, 242);
   font-family: "Source Sans Pro", sans-serif;
   padding: 1rem;
   cursor: pointer;
@@ -196,7 +196,7 @@ h2 {
 }
 
 .project {
-  background-color: rgb(15, 15, 15);
+  background-color: rgb(13, 17, 23);
   border-radius: 0.6rem;
   overflow: hidden;
 }
@@ -288,9 +288,9 @@ h2 {
 .contactForm textarea {
   font-size: 1.563rem;
   font-family: "Soure Sans Pro", sans-serif;
-  background: rgb(15, 15, 15);
-  border: 1px solid transparent;
-  color: #fff;
+  background: rgb(13, 17, 23);
+  border: 1px solid rgb(48, 54, 61);
+  color: rgb(242, 242, 242);
   outline: none;
   border-radius: 0.6rem;
 }
@@ -304,8 +304,11 @@ h2 {
   align-self: flex-start;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1.563rem;
-  font-weight: 400;
+  font-weight: 600;
+  border: none;
   border-radius: 0.6rem;
+  background: rgb(4, 195, 127);
+  color: rgb(13, 17, 23);
 }
 
 /*Main Footer*/
@@ -336,7 +339,6 @@ h2 {
 @media (min-width: 0px) and (hover: hover) and (pointer: fine) {
   .btn:hover {
     border-color: rgb(4, 195, 127);
-    color: #fff;
   }
   .navLink:hover,
   .navLink:active {
